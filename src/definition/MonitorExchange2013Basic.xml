@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc"
+	xmlns="http://www.uptimesoftware.com/erdc/erdc" xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0"
+	target_grouping="other">
+
+	<class>Exchange 2013</class>
+	<exec>JAVA_PLUGIN:UptimeMonitorExchange2013Basic</exec>
+	<erdc_version>1.0</erdc_version>
+	<category>Applications - Email</category>
+	<category_related>Applications - General</category_related>
+	<grid_info>
+		<supported_versions>7.3</supported_versions>
+		<supported_platforms>windows, linux</supported_platforms>
+		<upgrade_in_place>true</upgrade_in_place>
+		<requires_agent_scripts>false</requires_agent_scripts>
+	</grid_info>
+
+	<elements>
+		<element name="port" parameter_type="input" data_type="integer" gui_basic="1" range_type="0" units="">
+			<control_options>size:10</control_options>
+			<default_value>9998</default_value>
+			<short_description>Agent Port</short_description>
+			<long_description>Enter the port that Up.time Agent is listening on
+			</long_description>
+			<validation_rule>
+				<alphanumeric />
+			</validation_rule>
+			<error_message>
+				<alphanumeric>required field</alphanumeric>
+			</error_message>
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="password" parameter_type="input" data_type="string" gui_basic="1" range_type="0" units="">
+			<control_options>size:10</control_options>
+			<default_value></default_value>
+			<short_description>Agent Password</short_description>
+			<long_description>Enter the password for Up.time Agent
+			</long_description>
+			<validation_rule>
+				<alphanumeric />
+			</validation_rule>
+			<error_message>
+				<alphanumeric>required field</alphanumeric>
+			</error_message>
+			<gui_type>
+				<password />
+			</gui_type>
+		</element>
+
+		<element name="SMTPAverageBytesPerInboundMessage" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>SMTP Average Bytes Per Inbound Message</short_description>
+			<long_description>SMTP Average Bytes Per Inbound Message in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="SMTPBytesReceivedPerSecond" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>SMTP Bytes Received Per Second</short_description>
+			<long_description>SMTP Bytes Received Per Second in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="SMTPInboundConnections" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>SMTP Inbound Connections</short_description>
+			<long_description>SMTP Inbound Connections in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="SMTPInboundMessagesReceivedPerSecond" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>SMTP Inbound Messages Received Per Second</short_description>
+			<long_description>SMTP Inbound Messages Received Per Second in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="SMTPBytesSentPerSecond" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>SMTP Bytes Sent Per Second</short_description>
+			<long_description>SMTP Bytes Sent Per Second in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="SMTPOutboundConnections" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>SMTP Outbound Connections</short_description>
+			<long_description>SMTP Outbound Connections in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="SMTPMessagesSentPerSecond" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>SMTP Messages Sent Per Second</short_description>
+			<long_description>SMTP Messages Sent Per Second in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="CurrentWebmailUsers" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Current Webmail Users</short_description>
+			<long_description>Current Webmail Users in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="WebmailUserLogonsPerSecond" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Webmail User Logons Per Second</short_description>
+			<long_description>Webmail User Logons Per Second in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="RPCAveragedLatency" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>RPC Averaged Latency</short_description>
+			<long_description>RPC Averaged Latency in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="RPCClientsBytesRead" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>RPC Clients Bytes Read</short_description>
+			<long_description>RPC Clients Bytes Read in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="RPCClientsBytesWritten" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>RPC Clients Bytes Written</short_description>
+			<long_description>RPC Clients Bytes Written in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="RPCDispatchTaskActiveThreads" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>RPC Dispatch Task Active Threads</short_description>
+			<long_description>RPC Dispatch Task Active Threads in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="RPCDispatchTaskQueueLength" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>RPC Dispatch Task Queue Length</short_description>
+			<long_description>RPC Dispatch Task Queue Length in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="RPCOperationsPersec" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>RPC Operations Per sec</short_description>
+			<long_description>RPC Operations Per sec in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="RPCRequests" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>RPC Requests</short_description>
+			<long_description>RPC Requests in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="AverageEventProcessingTimeInSecondsPerAssistant" parameter_type="output" data_type="integer"
+			gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Average Event Processing Time In Seconds Per Assistant</short_description>
+			<long_description>Average Event Processing Time In Seconds Per Assistant in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="AverageEventQueueTimeInSecondsPerAssistant" parameter_type="output" data_type="integer"
+			gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Average Event Queue Time In Seconds Per Assistant</short_description>
+			<long_description>Average Event Queue Time In Seconds Per Assistant in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="EventsInQueuePerAssistant" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Events In Queue Per Assistant</short_description>
+			<long_description>Events In Queue Per Assistant in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="EventsProcessedPerAssistant" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Events Processed Per Assistant</short_description>
+			<long_description>Events Processed Per Assistant in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="EventsProcessedPerSecondPerAssistant" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Events Processed Per Second Per Assistant</short_description>
+			<long_description>Events Processed Per Second Per Assistant in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="AverageEventProcessingTimeInSecondsPerDatabase" parameter_type="output" data_type="integer"
+			gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Average Event Processing Time In Seconds Per Database</short_description>
+			<long_description>Average Event Processing Time In Seconds Per Database in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="AverageMailboxProcessingTimeInSecondsPerDatabase" parameter_type="output" data_type="integer"
+			gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Average Mailbox Processing Time In Seconds Per Database</short_description>
+			<long_description>Average Mailbox Processing Time In Seconds Per Database in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="EventsInQueuePerDatabase" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Events In Queue Per Database</short_description>
+			<long_description>Events In Queue Per Database in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="MailboxesProcessedPerDatabase" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Mailboxes Processed Per Database</short_description>
+			<long_description>Mailboxes Processed Per Database in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="MailboxesProcessedPerSecondPerDatabase" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0">
+			<control_options>size:40</control_options>
+			<default_value />
+			<short_description>Mailboxes Processed Per Second Per Database</short_description>
+			<long_description>Mailboxes Processed Per Second Per Database in the returned data</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+
+		<element name="timer" parameter_type="output" data_type="integer" gui_basic="0" range_type="0" units="ms">
+			<control_options>size:8</control_options>
+			<default_value />
+			<short_description>Response Time</short_description>
+			<long_description>Response time in ms</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+	</elements>
+
+	<help />
+</uptime>
