@@ -3,7 +3,7 @@
 	xmlns="http://www.uptimesoftware.com/erdc/erdc" xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0"
 	target_grouping="other">
 
-	<class>Exchange 2013</class>
+	<class>Exchange 2013 Basic</class>
 	<exec>JAVA_PLUGIN:UptimeMonitorExchange2013Basic</exec>
 	<erdc_version>1.0</erdc_version>
 	<category>Applications - Email</category>
